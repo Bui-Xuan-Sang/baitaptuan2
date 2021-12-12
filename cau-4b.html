@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 4b</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="Nhập vào a"/><br>
+<input type="text" id="b" placeholder="Nhập vào b"/><br>
+<button type="button" onclick="kq()">Kết quả</button><br>
+<p id="result"></p>
+<p id="result1"></p>
+<script>
+    function kq() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let kq1 = a*a;
+        let kq2 = Math.pow(a,b);
+
+        document.getElementById("result").innerHTML = 'a^a = ' + kq1;
+        document.getElementById("result1").innerHTML = 'a^b = ' + kq2;
+    }
+</script>
+</body>
+</html>

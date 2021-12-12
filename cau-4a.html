@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 4a</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="giá trị cạnh hình vuông"/><br>
+<button type="button" onclick="kq()">Kết quả</button>
+<br>
+<p id="result"></p>
+<p id="result1"></p>
+<script>
+    function kq() {
+        let a = document.getElementById("a").value;
+        let S = a * a;
+        let C = 4 * a;
+
+        document.getElementById("result").innerHTML = 'Diện tích hình vuông = ' + S ;
+        document.getElementById("result1").innerHTML = 'Chu vi hình vuông = ' + C;
+
+    }
+</script>
+</body>
+</html>

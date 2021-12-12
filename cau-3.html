@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+<!-- Câu lệnh nhận vào giá trị từ 1 ô input:<input type = "" id = "a" /><br> !-->
+<input type="text" id="a" placeholder="Nhập giá trị của a"/><br>
+<input type="text" id="b" placeholder="Nhập giá trị của b"/><br>
+<button type="button" onclick="ketqua()">Kết quả</button><br>
+<h1 id="result"></h1>
+<script>
+    function ketqua() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let S = a * b;
+        document.getElementById("result").innerHTML = 'S = ' + S;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 4c</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="Nhập vào a"/><br>
+<input type="text" id="b" placeholder="Nhập vào b"/><br>
+<button type="button" onclick="kq()">Kết quả</button>
+<p id="result"></p>
+<script>
+    function kq() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = b -a;
+        let S = a*(c + 1) + c*(c + 1)/2;
+        document.getElementById("result").innerHTML = 'Tổng các số từ a đến b =' + S;
+
+    }
+</script>
+</body>
+</html>

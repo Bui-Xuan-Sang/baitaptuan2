@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 4d</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="Nhập năm"/><br>
+<button onclick="kq()">Kết quả</button><br>
+<p id="result"></p>
+<script>
+  function kq() {
+    let year = document.getElementById("a").value;
+    let century = parseInt(year/100) + 1;
+    document.getElementById("result").innerHTML = 'Năm ' + year + ' thuộc thế kỷ ' + century;
+  }
+</script>
+</body>
+</html>
